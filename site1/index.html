@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAVOIA</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/nav/logonav.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+   <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <header class="fundo">
+      <section id="nav-section">
+        <nav class="nav">
+          <img src="./src/img/nav/logonav.png" alt="Logo" class="logo" />
+          <p class="logo-text">SAVOIA</p>
+        </nav>
+      </section>
+      <section id="header">
+        <button class="arrows">
+          <span class="material-symbols-outlined" id="prev-arrow">
+            keyboard_double_arrow_left
+          </span>
+        </button>
+        <div class="carousel" id="carousel">
+          <img src="./src/img/header/Trás.png" alt="Image 1" id="static-img1" />
+          <!-- Imagem fixa -->
+          <img
+            src="./src/img/header/ContainerVermelho.png"
+            alt="Image 2"
+            id="dynamic-img"
+            class="active"
+          />
+          <!-- Imagem dinâmica -->
+          <img
+            src="./src/img/header/Frente.png"
+            alt="Image 3"
+            id="static-img3"
+          />
+          <!-- Imagem fixa -->
+        </div>
+        <button class="arrows">
+          <span class="material-symbols-outlined" id="next-arrow">
+            double_arrow
+          </span>
+        </button>
+      </section>
+    </header>
+
+    <main id="main-container">
+      <section id="first-content">
+        <div class="text-container">
+          <p>SOMOS O SEU ACESSO AO MERCADO INTERNACIONAL.</p>
+        </div>
+        <div class="trail-one">
+          <img src="./src/img/coluna02/trilha.png" alt="trilha" class="trail" />
+        </div>
+        <div class="profile-text">
+          <h3>PERFIS DE EMPRESAS QUE PRECISAM DOS NOSSOS SERVIÇOS</h3>
+        </div>
+      </section>
+      <section id="cards-container">
+        <img
+          src="./src/img/coluna02/janelaatt.png"
+          alt="janela"
+          class="background-image"
+        />
+      </section>
+      <section id="differences">
+        <div class="text-container">
+          <p>DIFERENCIAIS SAVOIA</p>
+        </div>
+        <div class="img-differences">
+          <img
+            class="container-info"
+            src="./src/img/Coluna03/container-de-caminhao.png"
+            alt="info-img"
+          />
+        </div>
+      </section>
+
+      <section class="carrossel-section">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+              id="img1"
+                src="./src/img/coluna04/feed01.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/coluna04/FEED02.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/img/coluna04/feed3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <img
+          class="rodape-img"
+          src="./src/img/coluna04/rodapé.png"
+          alt="rodapé"
+        />
+      </section>
+    </main>
+    <script src="./src/js/scripts.js"></script>
+
+   <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+  </body>
+</html>
